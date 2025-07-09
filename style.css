@@ -92,7 +92,7 @@ button:hover {
    display: flex;
     align-items: center;
     justify-content: center;
-    height: 650px;
+    height: 600px;
     width: 380px;
     background: linear-gradient(to bottom, #1a1a1a, #999999, #e0e0e0);
   }
