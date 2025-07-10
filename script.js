@@ -1,4 +1,4 @@
-let buttons = document.querySelectorAll(".buttons button");
+let buttons = document.querySelectorAll("button");
 let display = document.querySelector(".showNumber");
 let input = "";
 
@@ -10,7 +10,11 @@ for (let i = 0; i < buttons.length; i++) {
     } else if (value === "DE") {
       input = input.slice(0, -1);
     } else if (value === "=") {
-      input = eval(input);
+      try {
+        input = eval(input);
+      } catch (error) {
+        input = "invalid input!";
+      }
     } else {
       input = input + value;
     }
